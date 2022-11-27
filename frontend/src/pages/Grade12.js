@@ -34,7 +34,7 @@ function Grade12() {
                         </img>
                         <br></br>
                         <br></br>
-                        <NavLink to={"/Lesson/Grade1_2/Calculation"} style={{textDecoration: "none"}}>
+                        <NavLink to={"/lessons/1"} style={{textDecoration: "none"}}>
                             Calcutaion
                         </NavLink>
                     </div>
@@ -43,7 +43,7 @@ function Grade12() {
                         </img>
                         <br></br>
                         <br></br>
-                        <NavLink to={"/Lesson/Grade1_2/Length"} style={{textDecoration: "none"}}>
+                        <NavLink to={"/lessons/2"} style={{textDecoration: "none"}}>
                             Length
                         </NavLink>
                     </div>
@@ -52,7 +52,7 @@ function Grade12() {
                         </img>
                         <br></br>
                         <br></br>
-                        <NavLink to={"/Lesson/3"} style={{textDecoration: "none"}}>
+                        <NavLink to={"/lessons/3"} style={{textDecoration: "none"}}>
                             Bar Graph
                         </NavLink>
                     </div>
@@ -61,7 +61,7 @@ function Grade12() {
                         </img>
                         <br></br>
                         <br></br>
-                        <NavLink to={"/Lesson/4"} style={{textDecoration: "none"}}>
+                        <NavLink to={"/lessons/4"} style={{textDecoration: "none"}}>
                             Line Plot
                         </NavLink>
                     </div>

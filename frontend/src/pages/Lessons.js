@@ -21,7 +21,7 @@ function Lessons() {
     <div className="lessons">
       <h1 className="title">Lessons</h1>
         <div className="lesson-menu">
-        <h1>Menu</h1>
+          <h1>Menu</h1>
           <br/><br/>
           <NavLink to={"/Lesson/Grade1_2"} style={{textDecoration: "none"}}>Grade 1-2</NavLink>
           <br/><br/><br/><br/>
@@ -29,6 +29,19 @@ function Lessons() {
           <br/><br/><br/><br/>
           <NavLink to={"/Lesson/Grade5_6"} style={{textDecoration: "none"}}>Grade 5-6</NavLink>
           <br/>          
+        </div>
+        <div className="lesson-content">
+          <h1>
+            Welcome to KIDATA's lessons
+          </h1>
+          <br/><br/><br/>
+          <p>
+            Based on this content, you can learn more interesting skills.</p>
+          <br/>
+          <p>
+            If you are tired of playing games, reading will be a good choice.
+          </p>
+          <br/>
         </div>
 
       
