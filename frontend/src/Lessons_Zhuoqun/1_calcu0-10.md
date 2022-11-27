@@ -49,12 +49,13 @@ Yes! The answer is 5.
 ### **Could you figure out the following questions?** ###  
 
 ![Alt text](https://live.staticflickr.com/65535/52523968464_3f6224d937.jpg)  
-How many pears are there?  
+![Alt text](https://live.staticflickr.com/65535/52524166730_f117ef9650_z.jpg)    
+From first graph, how many pears are there?  
 A. 5 &ensp; B. 1 &ensp; C. 9(x) &ensp; D. 7
 
 
 ![Alt text](https://live.staticflickr.com/65535/52524166730_f117ef9650_z.jpg)
 
-How many pears are there?  
+From second graph, how many pears are there?  
 A. 5 &ensp; B. 4(x) &ensp; C. 9 &ensp; D. 7
 

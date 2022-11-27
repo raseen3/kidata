@@ -44,10 +44,11 @@ Or we align one end of an object with a scale and read on the other side, subtra
 ### **Could you figure out the following questions?** ###  
 ![](https://live.staticflickr.com/65535/52525054967_29724d23c5_z.jpg)
 
+![](https://live.staticflickr.com/65535/52526072993_dac49a59e2_z.jpg)  
+
 1. what is this apple's length according to the picture above?  
 A. 5cm  B. 10cm  C. 7cm(x)  D. 9cm
-
-![](https://live.staticflickr.com/65535/52526072993_dac49a59e2_z.jpg)  
+  
 2. what is this pencil's length according to the picture above?   
 A. 9cm(x)  B. 7cm  C. 6cm  D. 12cm
 
