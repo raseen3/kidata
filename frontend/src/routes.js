@@ -17,6 +17,19 @@ import Grade12 from "./pages/Grade12";
 import Grade34 from "./pages/Grade34";
 import Grade56 from "./pages/Grade56";
 
+import Calculation from "./pages/lesson/Calculation";
+import Length from "./pages/lesson/Length";
+import BarGraph from "./pages/lesson/BarGraph";
+import LinePlot from "./pages/lesson/LinePlot";
+import Division from "./pages/lesson/Division";
+import Pie from "./pages/lesson/Pie";
+import Multiplication from "./pages/lesson/Multiplication";
+import Probability from "./pages/lesson/Probability";
+import Algebra from "./pages/lesson/Algebra";
+import LinearGraph from "./pages/lesson/LinearGraph";
+import Dataset from "./pages/lesson/Dataset";
+import Fraction from "./pages/lesson/Fraction";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements([
@@ -34,7 +47,20 @@ const router = createBrowserRouter(
 
       <Route path={"/Lesson/Grade1_2"} element={<Grade12 />}/>
       <Route path={"/Lesson/Grade3_4"} element={<Grade34 />}/>
-      <Route path={"/Lesson/Grade5_6"} element={<Grade56 />}/>      
+      <Route path={"/Lesson/Grade5_6"} element={<Grade56 />}/>  
+      
+      <Route path={"/Lesson/Grade1_2/Calculation"} element={<Calculation />}/>    
+      <Route path={"/Lesson/Grade1_2/Length"} element={<Length />}/>   
+      <Route path={"/Lesson/Grade1_2/BarGraph"} element={<BarGraph />}/> 
+      <Route path={"/Lesson/Grade1_2/LinePlot"} element={<LinePlot />}/>   
+      <Route path={"/Lesson/Grade3_4/Division"} element={<Division />}/> 
+      <Route path={"/Lesson/Grade3_4/Pie"} element={<Pie />}/>
+      <Route path={"/Lesson/Grade3_4/Multiplication"} element={<Multiplication />}/>
+      <Route path={"/Lesson/Grade3_4/Probability"} element={<Probability />}/>
+      <Route path={"/Lesson/Grade5_6/Algebra"} element={<Algebra />}/>
+      <Route path={"/Lesson/Grade5_6/LinearGraph"} element={<LinearGraph />}/>
+      <Route path={"/Lesson/Grade5_6/Dataset"} element={<Dataset/>}/>
+      <Route path={"/Lesson/Grade5_6/Fraction"} element={<Fraction/>}/>
     </Route>,
 
     // full pages:
