@@ -34,7 +34,7 @@ function Grade34() {
                     </img>
                     <br></br>
                     <br></br>
-                    <NavLink to={"/Lesson/Grade3_4/Division"} style={{textDecoration: "none"}}>
+                    <NavLink to={"/Lesson/5"} style={{textDecoration: "none"}}>
                         Division
                     </NavLink>
                 </div>
@@ -43,7 +43,7 @@ function Grade34() {
                     </img>
                     <br></br>   
                     <br></br>
-                    <NavLink to={"/Lesson/Grade3_4/Pie"} style={{textDecoration: "none"}}>
+                    <NavLink to={"/Lesson/6"} style={{textDecoration: "none"}}>
                         Pie
                     </NavLink>
                 </div>
@@ -52,7 +52,7 @@ function Grade34() {
                     </img>
                     <br></br>
                     <br></br>
-                    <NavLink to={"/Lesson/Grade3_4/Multiplication"} style={{textDecoration: "none"}}>
+                    <NavLink to={"/Lesson/7"} style={{textDecoration: "none"}}>
                         Multiplication
                     </NavLink>
                 </div>                    
@@ -61,7 +61,7 @@ function Grade34() {
                     </img>
                     <br></br>
                     <br></br>
-                    <NavLink to={"/Lesson/Grade3_4/Probability"} style={{textDecoration: "none"}}>
+                    <NavLink to={"/Lesson/8"} style={{textDecoration: "none"}}>
                         Probability
                     </NavLink>
                 </div>

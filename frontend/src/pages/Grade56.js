@@ -35,7 +35,7 @@ function Grade56() {
                     </div>
                     <br></br>
                     <br></br>
-                    <NavLink to={"/Lesson/Grade5_6/Algebra"} style={{textDecoration: "none"}}>
+                    <NavLink to={"/Lesson/10"} style={{textDecoration: "none"}}>
                         Algebra
                     </NavLink>
                 </div>
@@ -44,7 +44,7 @@ function Grade56() {
                     </img>
                     <br></br>   
                     <br></br>
-                    <NavLink to={"/Lesson/Grade5_6/LinearGraph"} style={{textDecoration: "none"}}>
+                    <NavLink to={"/Lesson9"} style={{textDecoration: "none"}}>
                         Linear Graph
                     </NavLink>
                 </div>
@@ -53,7 +53,7 @@ function Grade56() {
                     </img>
                     <br></br>
                     <br></br>
-                    <NavLink to={"/Lesson/Grade5_6/Dataset"} style={{textDecoration: "none"}}>
+                    <NavLink to={"/Lesson/11"} style={{textDecoration: "none"}}>
                         Dataset
                     </NavLink>
                 </div>                    
@@ -62,7 +62,7 @@ function Grade56() {
                     </img>
                     <br></br>
                     <br></br>
-                    <NavLink to={"/Lesson/Grade5_6/Fraction"} style={{textDecoration: "none"}}>
+                    <NavLink to={"/Lesson/12"} style={{textDecoration: "none"}}>
                         Fraction
                     </NavLink>
                 </div>

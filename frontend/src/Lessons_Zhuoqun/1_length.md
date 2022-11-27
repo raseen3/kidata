@@ -39,13 +39,14 @@ Usually one scale of a ruler is one millimeter, and 10 scales are one centimeter
 ### Ruler measurement  ##
 We align the beginning of the object with the scale of 0, and then the other end shows how much, then its length is. 
 
+Or we align one end of an object with a scale and read on the other side, subtracting the number on the right from the number on the left is the length of the object  
+
 ### **Could you figure out the following questions?** ###  
 ![](https://live.staticflickr.com/65535/52525054967_29724d23c5_z.jpg)
 
 1. what is this apple's length according to the picture above?  
 A. 5cm  B. 10cm  C. 7cm(x)  D. 9cm
 
-Or we align one end of an object with a scale and read on the other side, subtracting the number on the right from the number on the left is the length of the object  
 ![](https://live.staticflickr.com/65535/52526072993_dac49a59e2_z.jpg)  
 2. what is this pencil's length according to the picture above?   
 A. 9cm(x)  B. 7cm  C. 6cm  D. 12cm
