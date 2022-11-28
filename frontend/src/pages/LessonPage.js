@@ -67,8 +67,9 @@ function LessonContent(props) {
 // status screens:
 function FetchLoading() {
   return (
-    <div className="lesson">
-      <h1>Working on getting you your lesson...</h1>
+    <div className="status">
+      <h1 className="title">Hold on...</h1>
+      <h2>We're working really hard to get you your lesson!</h2>
     </div>
   )
 }

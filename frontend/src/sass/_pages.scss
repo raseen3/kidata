@@ -107,6 +107,10 @@ $page-horizontal-margin: 25%;
 .lesson-page {
   .status {
     @include base.horizontally-center;
+
+    * { 
+      text-align: center;
+    }
   }
 
   .markdown img {
