@@ -6,14 +6,14 @@ import Markdown from "markdown-to-jsx";
 const ASCII_A = 'A'.charCodeAt(0);
 
 function QuizChoice(props) {
+  const [ wasClicked, setClicked ] = useState(false);
+
   return (
-    <li>
+    <li className={ `choice ${ wasClicked ? (props.isCorrect ? "success" : "danger") : "" }` } >
       <button
-        // this needs some revision; may want to elevate this to be at the same
-        // level as the component  
-        onClick={() => props.onClick()}
+        onClick={() => setClicked(true)}
       >
-        { props.text }
+        <h3>{ props.text }</h3>
       </button>
     </li>
   )
@@ -22,25 +22,27 @@ function QuizChoice(props) {
 function QuizQuestion(props) {
   const { question, choices, answer } = props.content;
 
-  const [ wasClicked, setClicked ] = useState(false);
-
   return (
     <div>
-      <h1>{ question }</h1>
-      {
-        // questions/choices should be returned as an array when stringify-ed,
-        // so use map:
-        choices.map((choice, i) => (
-          // ...and return a div for each array entry:
-          <QuizChoice 
-            className={ wasClicked ? (answer === choice ? "success" : "danger") : "" }
-            text={ `${String.fromCharCode(ASCII_A + i)}. ${choice}` }
-            onClick={() => {
-              setClicked(true);
-            }}
-          />
-        ))
-      }
+      <h2>{ `${props.index + 1}. ${question}` }</h2>
+      <ul>
+        {
+          // questions/choices should be returned as an array when stringify-ed,
+          // so use map:
+          choices.map((choice, i) => {
+            // if this answer is the correct one, apply the "success" class (green)
+            // or "danger" (red)
+
+            // ...and return a div for each array entry:
+            return (
+              <QuizChoice 
+                text={ `${String.fromCharCode(ASCII_A + i)}. ${choice}` }
+                isCorrect={ i == answer }
+              />
+            )
+          })
+        }
+      </ul>
     </div>
   )
 }
@@ -50,8 +52,8 @@ function LessonContent(props) {
 
   let choices;
   if (quiz) {
-    choices = quiz.map(content => (
-      <QuizQuestion content={content} />
+    choices = quiz.map((content, i) => (
+      <QuizQuestion content={ content } index={ i } />
     ));
   }
 
@@ -59,7 +61,14 @@ function LessonContent(props) {
     <>
       <Markdown className="markdown" children={ props.markdown } />
       {/* if we don't have a quiz, just don't render anything here: */}
-      { choices }
+      { 
+        choices && (
+          <>
+            <h1>Quiz</h1>
+            { choices }
+          </>
+        )
+      }
     </>
   )
 }

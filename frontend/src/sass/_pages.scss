@@ -117,6 +117,53 @@ $page-horizontal-margin: 25%;
     max-width: 100%;
     height: auto;
   }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li:hover {
+    background-color: rgba(white, 30%);
+  }
+
+  // why was this rule removed from the fonts partial?
+  h1, h2 {
+    margin-bottom: 0;
+  }
+  
+  .choice {
+    padding: 5px;
+
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+    // animation:
+    transition-duration: 0.2s;
+
+    button {
+      cursor: pointer;
+
+      width: 100%;
+      text-align: left;
+      
+      background-color: transparent;
+      border: none;
+
+      // pull success/danger color from parent:
+      color: inherit;
+    }
+
+    &.success {
+      background-color: rgba(green, 50%);
+      color: greenyellow;
+    }
+
+    &.danger {
+      background-color: rgba(crimson, 50%);
+      color: crimson;
+    }
+  }
 }
 
 .error-page {
