@@ -24,14 +24,11 @@ function Lessons() {
           <h1>
             Welcome to KIDATA's lessons
           </h1>
-          <br/><br/><br/>
           <p>
             Based on this content, you can learn more interesting skills.</p>
-          <br/>
           <p>
             If you are tired of playing games, reading will be a good choice.
           </p>
-          <br/>
         </div>
         <div className="lesson-menu">
           <h1>Menu</h1>
