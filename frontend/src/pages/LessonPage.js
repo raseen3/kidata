@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import Markdown from "markdown-to-jsx";
@@ -68,15 +68,30 @@ function LessonContent(props) {
 function FetchLoading() {
   return (
     <div className="lesson">
-
+      <h1>Working on getting you your lesson...</h1>
     </div>
   )
 }
 
 function FetchError() {
+  // this is OK for now:
   return (
-    <div>
-      A not-so-pretty error screen. Something went wrong.
+    <div className="error-page">
+      <h1 className="title">Uh oh.</h1>
+
+      {/* should we leave this as a line break or properly format it?: */}
+      <br/>
+
+      <h2>It seems like we couldn't find your lesson.</h2>
+      <h3>How about trying a different one instead?</h3>
+      
+      <br/>
+      
+      <Link to="/lessons">
+        <div className="to-home">
+          <h3>Return to Lessons</h3>
+        </div>
+      </Link>
     </div>
   )
 }
