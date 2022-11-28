@@ -4,7 +4,7 @@ function Contact() {
         <div className="page-card">
             <p>
                 <h1>Contact Us</h1>
-                <p>Thank you for Taking time to contact us, Place provide the following information</p>
+                <p>Thank you for taking time to contact us! Please provide the following information:</p>
                 <br></br>
                 <br></br>
             </p>
@@ -31,11 +31,11 @@ function Contact() {
                     <label for='question'>Question</label>
                     <br></br>
                     <textarea id='question' name='question' rows='5' cols='30'>
-                        question is:
+                        I think that...
                     </textarea>
                 
                     <br></br>
-                    <input type='submit' value='submission'></input>
+                    <input type='submit' value='Send'></input>
 
 
                 </section>
