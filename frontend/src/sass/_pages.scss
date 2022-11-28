@@ -27,13 +27,20 @@ $page-horizontal-margin: 25%;
 
 .split-container {
   display: flex;
-
   flex-flow: row;
-  align-items: center;
   
   > * {
     flex: 1;
   }
+
+  &.hero {
+    align-items: center;
+  }
+}
+
+// generally only for .split-container:
+.right-align {
+  * { text-align: right; }
 }
 
 .title {

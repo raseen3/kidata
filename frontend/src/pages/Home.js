@@ -31,7 +31,7 @@ function Home() {
         </div>
       </div>
       
-      <div className="split-container welcome">
+      <div className="split-container">
         <div>
           <h1 className="title">Welcome!</h1>
           <p>
@@ -39,8 +39,11 @@ function Home() {
             science in a way that appeals to them.  
           </p>
         </div>
-        <div>
-
+        <div className="right-align">
+          <h1 className="title">Information Box</h1>
+            <p>
+              With body text aligned to the right...
+            </p>
         </div>
       </div>
 
