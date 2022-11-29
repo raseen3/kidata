@@ -8,7 +8,7 @@ function Contact() {
                 <br></br>
                 <br></br>
             </p>
-            <form action='' method='Post'>
+            <form action='http://localhost:8080/post/feedback' method='Post'>
                 <section id='info'>
                     <label for='name'>Name</label>
                     <br></br>

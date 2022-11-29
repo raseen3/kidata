@@ -4,10 +4,7 @@ import org.jetbrains.annotations.NotNull;
 import org.springframework.boot.configurationprocessor.json.JSONException;
 import org.springframework.boot.configurationprocessor.json.JSONObject;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
@@ -40,9 +37,9 @@ public class Controller extends WebMvcConfigurerAdapter {
         System.out.print(table);
         System.out.println(id);
     switch (table){
-        case "lesson": s = lesson(id, table, arr, "pull"); break;
-        case "slides": s = slides(id, table, arr, "pull"); break;
-        case "user": s = user(id, table, arr, "pull"); break;
+        case "lesson": s = lesson(id, arr, "pull"); break;
+        case "slides": s = slides(id, arr, "pull"); break;
+        case "user": s = user(id, arr, "pull"); break;
     }
         return s;
     }
@@ -54,43 +51,22 @@ public class Controller extends WebMvcConfigurerAdapter {
         System.out.print(table);
         System.out.println(id);
         switch (table){
-            case "lesson": lesson(id, table, arr, "delete"); break;
-            case "slides": slides(id, table, arr, "delete"); break;
-            case "user": user(id, table, arr, "delete"); break;
-            case "feedback": feedback(id, table, arr, "delete"); break;
+            case "lesson": lesson(id, arr, "delete"); break;
+            case "slides": slides(id, arr, "delete"); break;
+            case "user": user(id, arr, "delete"); break;
+            case "feedback": feedback(id, arr, "delete"); break;
         }
         return s;
     }
 
-    @RequestMapping("update/{table}/{info}")
-    public String update(@PathVariable("table") String table, @PathVariable("info") String info) throws SQLException, JSONException {
-        String s = "true";
-        String [] arr = info.split("-");
-        System.out.print(table);
-        String id = null;
-        switch (table){
-            case "lesson": lesson(id, table, arr, "update"); break;
-            case "slides": slides(id, table, arr, "update"); break;
-            case "user": user(id, table, arr, "update"); break;
-        }
-        return s;
+    @PostMapping(value = "post/feedback")
+    @ResponseBody
+    public void postfeedback(String name, String email, String questiontype, String question) throws SQLException {
+        String []arr = {name, email, questiontype, question};
+        System.out.println(arr);
+        feedback("", arr, "insert");
     }
 
-    @RequestMapping("push/{table}/{info}")
-    public String insert(@PathVariable("table") String table, @PathVariable("info") String info) throws SQLException, JSONException {
-        String s = "true";
-        String [] arr = info.split("-");
-        System.out.print(table);
-        String id = null;
-        switch (table){
-            case "lesson": lesson(id, table, arr, "insert"); break;
-            case "slides": slides(id, table, arr, "insert"); break;
-            case "user": user(id, table, arr, "insert"); break;
-            case "feedback": feedback(id, table, arr, "insert"); break;
-            case "userhistory": userhistory(id, table, arr, "insert"); break;
-        }
-        return s;
-    }
 
     @RequestMapping("check/{what}/{text}")
     public String check(@PathVariable("what") String what, @PathVariable("text") String text) throws SQLException, JSONException {
@@ -105,7 +81,7 @@ public class Controller extends WebMvcConfigurerAdapter {
         return s;
     }
 
-    public String feedback(String id, String table, String[] arr, @NotNull String instruction) throws SQLException {
+    public String feedback(String id, String[] arr, @NotNull String instruction) throws SQLException {
         String s = "";
         MySQLManipulation ms = new MySQLManipulation();
         Feedback temp = new Feedback(ms.getConnection());
@@ -116,7 +92,7 @@ public class Controller extends WebMvcConfigurerAdapter {
         return s;
     }
 
-    public String lesson(String id, String table, String[] arr, String instruction) throws SQLException, JSONException {
+    public String lesson(String id, String[] arr, String instruction) throws SQLException, JSONException {
         String s = "";
         MySQLManipulation ms = new MySQLManipulation();
         Lesson temp = new Lesson(ms.getConnection());
@@ -129,7 +105,7 @@ public class Controller extends WebMvcConfigurerAdapter {
         return s;
     }
 
-    public String slides(String id, String table, String[] arr, String instruction) throws SQLException, JSONException {
+    public String slides(String id, String[] arr, String instruction) throws SQLException, JSONException {
         String s = "";
         MySQLManipulation ms = new MySQLManipulation();
         Slides temp = new Slides(ms.getConnection());
@@ -142,7 +118,7 @@ public class Controller extends WebMvcConfigurerAdapter {
         return s;
     }
 
-    public String user (String id, String table, String[] arr, String instruction) throws SQLException, JSONException {
+    public String user (String id, String[] arr, String instruction) throws SQLException, JSONException {
         String s = "";
         System.out.println("here");
         MySQLManipulation ms = new MySQLManipulation();
@@ -156,7 +132,7 @@ public class Controller extends WebMvcConfigurerAdapter {
         return s;
     }
 
-    public String userhistory (String id, String table, String[] arr, String instruction) throws SQLException, JSONException {
+    public String userhistory (String id, String[] arr, String instruction) throws SQLException, JSONException {
         MySQLManipulation ms = new MySQLManipulation();
         UserHistory temp = new UserHistory(ms.getConnection());
         temp.insert(arr);
