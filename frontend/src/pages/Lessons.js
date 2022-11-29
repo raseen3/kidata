@@ -32,12 +32,23 @@ function Lessons() {
         </div>
         <div className="lesson-menu">
           <h1>Menu</h1>
-          <br/><br/>
-          <NavLink to={"/Lesson/Grade1_2"} style={{textDecoration: "none"}}>Grade 1-2</NavLink>
-          <br/><br/><br/><br/>
-          <NavLink to={"/Lesson/Grade3_4"} style={{textDecoration: "none"}}>Grade 3-4</NavLink>
-          <br/><br/><br/><br/>
-          <NavLink to={"/Lesson/Grade5_6"} style={{textDecoration: "none"}}>Grade 5-6</NavLink>
+          <ul>
+            <NavLink to={"/Lesson/Grade1_2"}>
+              <li>
+                <h3>Grade 1-2</h3>
+              </li>
+            </NavLink>
+            <NavLink to={"/Lesson/Grade3_4"}>
+              <li>
+                <h3>Grade 3-4</h3>
+              </li>
+            </NavLink>
+            <NavLink to={"/Lesson/Grade5_6"}>
+              <li>
+                <h3>Grade 5-6</h3>
+              </li>
+            </NavLink>
+          </ul>
           <br/>          
         </div>
     </div>

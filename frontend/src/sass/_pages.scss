@@ -100,13 +100,18 @@ $page-horizontal-margin: 25%;
 }
 
 .lessons {
+  .lesson-menu {
+    ul {
+      list-style: none;
+      padding-left: 0;
 
+      li {
+        background-color: base.$color-primary;
+        border-radius: 5px;
 
-  .lesson-list {
-
-
-    > .lesson-card {
-
+        padding: 5px;
+        margin-bottom: 5px;
+      }
     }
   }
 }
