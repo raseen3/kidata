@@ -38,29 +38,16 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
-      <Route path="/lessons" element={<Lessons />} />
+      <Route path="/lessons" element={<Lessons />}>
+        <Route index element={<Grade12 />} />
+        <Route path="/lessons/grade1_2" element={<Grade12 />} />
+        <Route path="/lessons/grade3_4" element={<Grade34 />} />
+        <Route path="/lessons/grade5_6" element={<Grade56 />} />
+      </Route>
       {/* individual lessons: */}
       <Route path="/lessons/:id" element={<LessonPage />} />
-      {/* /lessons/ */}
       {/* error page: */}
       <Route path="*" element={<Error />} />
-
-      <Route path={"/Lesson/Grade1_2"} element={<Grade12 />}/>
-      <Route path={"/Lesson/Grade3_4"} element={<Grade34 />}/>
-      <Route path={"/Lesson/Grade5_6"} element={<Grade56 />}/>  
-      
-      <Route path={"/Lesson/Grade1_2/Calculation"} element={<Calculation />}/>    
-      <Route path={"/Lesson/Grade1_2/Length"} element={<Length />}/>   
-      <Route path={"/Lesson/Grade1_2/BarGraph"} element={<BarGraph />}/> 
-      <Route path={"/Lesson/Grade1_2/LinePlot"} element={<LinePlot />}/>   
-      <Route path={"/Lesson/Grade3_4/Division"} element={<Division />}/> 
-      <Route path={"/Lesson/Grade3_4/Pie"} element={<Pie />}/>
-      <Route path={"/Lesson/Grade3_4/Multiplication"} element={<Multiplication />}/>
-      <Route path={"/Lesson/Grade3_4/Probability"} element={<Probability />}/>
-      <Route path={"/Lesson/Grade5_6/Algebra"} element={<Algebra />}/>
-      <Route path={"/Lesson/Grade5_6/LinearGraph"} element={<LinearGraph />}/>
-      <Route path={"/Lesson/Grade5_6/Dataset"} element={<Dataset/>}/>
-      <Route path={"/Lesson/Grade5_6/Fraction"} element={<Fraction/>}/>
     </Route>,
 
     // full pages:

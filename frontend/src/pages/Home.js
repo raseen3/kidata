@@ -48,7 +48,7 @@ function Home() {
       </div>
 
       {/* temporary: */}
-      <span style={{"padding-bottom": "400px"}} />
+      <div style={{paddingBottom: "100px"}} />
     </div>
   )
 }
