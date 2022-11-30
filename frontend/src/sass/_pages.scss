@@ -108,10 +108,52 @@ $page-horizontal-margin: 25%;
       li {
         background-color: base.$color-primary;
         border-radius: 5px;
-
+        
         padding: 5px;
         margin-bottom: 5px;
+
+        // animations:
+        transition-duration: 0.2s;
       }
+
+      li:hover {
+        background-color: rgba(white, 80%);
+      }
+    }
+  }
+
+  .card-list {
+    list-style: none;
+
+    columns: 2;
+    column-fill: balance;
+    
+    gap: 5px;
+    
+    .card {
+      display: inline-block;
+      
+      // why does this resolve the gap issue?:
+      column-width: 400px;
+
+      background-color: base.$color-primary;
+      border-radius: 5px;
+      
+      padding: 5px;
+      
+      // animations:
+      transition-duration: 0.2s;
+
+      img {
+        max-width: 100%;
+        height: auto;
+
+        border-radius: inherit;
+      }
+
+      &:hover {
+        background-color: base.$color-secondary;
+      } 
     }
   }
 }
