@@ -6,14 +6,14 @@ import Markdown from "markdown-to-jsx";
 const ASCII_A = 'A'.charCodeAt(0);
 
 function QuizChoice(props) {
-  const [ wasClicked, setClicked ] = useState(false);
+  const [wasClicked, setClicked] = useState(false);
 
   return (
-    <li className={ `choice ${ wasClicked ? (props.isCorrect ? "success" : "danger") : "" }` } >
+    <li className={`choice ${wasClicked ? (props.isCorrect ? "success" : "danger") : ""}`} >
       <button
         onClick={() => setClicked(true)}
       >
-        <h3>{ props.text }</h3>
+        <h3>{props.text}</h3>
       </button>
     </li>
   )
@@ -24,7 +24,7 @@ function QuizQuestion(props) {
 
   return (
     <div>
-      <h2>{ `${props.index + 1}. ${question}` }</h2>
+      <h2>{`${props.index + 1}. ${question}`}</h2>
       <ul>
         {
           // questions/choices should be returned as an array when stringify-ed,
@@ -35,9 +35,9 @@ function QuizQuestion(props) {
 
             // ...and return a div for each array entry:
             return (
-              <QuizChoice 
-                text={ `${String.fromCharCode(ASCII_A + i)}. ${choice}` }
-                isCorrect={ i == answer }
+              <QuizChoice
+                text={`${String.fromCharCode(ASCII_A + i)}. ${choice}`}
+                isCorrect={i == answer}
               />
             )
           })
@@ -53,19 +53,19 @@ function LessonContent(props) {
   let choices;
   if (quiz) {
     choices = quiz.map((content, i) => (
-      <QuizQuestion content={ content } index={ i } />
+      <QuizQuestion content={content} index={i} />
     ));
   }
 
   return (
     <>
-      <Markdown className="markdown" children={ props.markdown } />
+      <Markdown className="markdown" children={props.markdown} />
       {/* if we don't have a quiz, just don't render anything here: */}
-      { 
+      {
         choices && (
           <>
             <h1>Quiz</h1>
-            { choices }
+            {choices}
           </>
         )
       }
@@ -90,13 +90,13 @@ function FetchError() {
       <h1 className="title">Uh oh.</h1>
 
       {/* should we leave this as a line break or properly format it?: */}
-      <br/>
+      <br />
 
       <h2>It seems like we couldn't find your lesson.</h2>
       <h3>How about trying a different one instead?</h3>
-      
-      <br/>
-      
+
+      <br />
+
       <Link to="/lessons">
         <div className="to-home">
           <h3>Return to Lessons</h3>
@@ -109,11 +109,11 @@ function FetchError() {
 function LessonPage() {
   const { id } = useParams();
 
-  const [ content, setContent ] = useState(null);
-  const [ quiz, setQuiz ] = useState(null);
+  const [content, setContent] = useState(null);
+  const [quiz, setQuiz] = useState(null);
 
-  const [ failure, setFailure ] = useState(false);
-  
+  const [failure, setFailure] = useState(false);
+
   useEffect(() => {
     fetch("http://localhost:8080/pull/slides/" + id)
       .then(response => response.json())
@@ -124,7 +124,7 @@ function LessonPage() {
         if (!markdown)
           // invoke the .catch:
           throw new Error("Did not receieve markdown body from server.");
-        
+
         body.quiz && setQuiz(JSON.parse(body.quiz));
 
         setContent(markdown);
@@ -136,21 +136,21 @@ function LessonPage() {
   }, []);
 
   let renderElement = <FetchLoading />
-  
+
   // is there a better way to do this?:
   if (failure) {
     renderElement = <FetchError />
   } else if (content) {
     renderElement = <LessonContent
-      markdown={ content }
+      markdown={content}
       // rely on quiz being falsy here:
-      quiz={ quiz }
+      quiz={quiz}
     />
   }
-  
+
   return (
     <div className="lesson-page">
-      { renderElement }
+      {renderElement}
     </div>
   )
 }
