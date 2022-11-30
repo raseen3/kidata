@@ -114,10 +114,24 @@ $page-horizontal-margin: 25%;
 
         // animations:
         transition-duration: 0.2s;
-      }
+        
+        // tiers:
+        &.success {
+          background-color: limegreen;
+        }
 
-      li:hover {
-        background-color: rgba(white, 80%);
+        &.warning {
+          background-color: gold;
+        }
+
+        &.danger {
+          background-color: tomato;
+        }
+        
+        &:hover {
+          // rgbA!? why!?!?  
+          background-color: rgba(white, 80%);
+        }
       }
     }
   }
