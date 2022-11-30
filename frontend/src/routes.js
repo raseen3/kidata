@@ -10,26 +10,13 @@ import Home from "./pages/Home"
 import About from "./pages/About";
 import Error from "./pages/Error";
 import Contact from "./pages/Contact"
-import Lessons from "./pages/Lessons";
-import LessonPage from "./pages/LessonPage"
 
+import Lessons from "./pages/Lessons";
 import Grade12 from "./pages/Grade12";
 import Grade34 from "./pages/Grade34";
 import Grade56 from "./pages/Grade56";
 
-import Calculation from "./pages/lesson/Calculation";
-import Length from "./pages/lesson/Length";
-import BarGraph from "./pages/lesson/BarGraph";
-import LinePlot from "./pages/lesson/LinePlot";
-import Division from "./pages/lesson/Division";
-import Pie from "./pages/lesson/Pie";
-import Multiplication from "./pages/lesson/Multiplication";
-import Probability from "./pages/lesson/Probability";
-import Algebra from "./pages/lesson/Algebra";
-import LinearGraph from "./pages/lesson/LinearGraph";
-import Dataset from "./pages/lesson/Dataset";
-import Fraction from "./pages/lesson/Fraction";
-
+import LessonPage from "./pages/LessonPage"
 
 const router = createBrowserRouter(
   createRoutesFromElements([
