@@ -1,6 +1,6 @@
 function Contact() {
     return (
-        <div className="Contact">
+    <div className="Contact">
         <div className="page-card">
             <p>
                 <h1 className="title">Contact Us</h1>
@@ -8,7 +8,9 @@ function Contact() {
                 <br></br>
                 <br></br>
             </p>
-            <form action='http://localhost:8080/post/feedback' method='Post'>
+        </div>
+        <div className="contact-card">
+            <form action='http://localhost:8080/post/feedback' method='Post' className = 'send'>
                 <section id='info'>
                     <label for='name'>Name</label>
                     <br></br>

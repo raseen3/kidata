@@ -173,7 +173,11 @@ $page-horizontal-margin: 25%;
     }
   }
 }
-
+.contact-card{
+  background-color: base.$color-primary;
+  border-radius: 10px;
+  text-align: center
+}
 .lesson-page {
   .status {
     @include base.horizontally-center;
