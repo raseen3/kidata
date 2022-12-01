@@ -4,7 +4,7 @@ function Contact() {
         <div className="page-card">
             <p>
                 <h1 className="title">Contact Us</h1>
-                <p>Thank you for taking time to contact us! Please provide the following information:</p>
+                <p><strong>Thank you for taking time to contact us! Please provide the following information:</strong></p>
                 <br></br>
                 <br></br>
             </p>
@@ -12,15 +12,20 @@ function Contact() {
         <div className="contact-card">
             <form action='http://localhost:8080/post/feedback' method='Post' className = 'send'>
                 <section id='info'>
-                    <label for='name'>Name</label>
+                    <label for='name'><strong>Name</strong></label>
+                    <br></br>
                     <br></br>
                     <input type='text' name='name' id='name' ></input>
                     <br></br>
-                    <label for='email'>Email</label>
+                    <br></br>
+                    <label for='email'><strong>Email</strong></label>
+                    <br></br>
                     <br></br>
                     <input type='text' id='email' name='email' ></input>
                     <br></br>
-                    <label for='questiontype'>Question Type</label>
+                    <br></br>
+                    <label for='questiontype'><strong>Question Type</strong></label>
+                    <br></br>
                     <br></br>
                     <select id='questiontype' name='questiontype'>
                         <option value='content'>Content</option>
@@ -30,10 +35,11 @@ function Contact() {
                     <br></br>
                     <br></br>
 
-                    <label for='question'>Question</label>
+                    <label for='question'><strong>Question</strong></label>
                     <br></br>
-                    <textarea id='question' name='question' rows='5' cols='30'>
-                        I think that...
+                    <br></br>
+                    <textarea id='question' name='question' rows='10' cols='50'>
+                        Please write the feedback here...
                     </textarea>
                 
                     <br></br>

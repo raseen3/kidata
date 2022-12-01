@@ -94,6 +94,31 @@ $page-horizontal-margin: 25%;
     }
   }
 }
+.content-card {
+  text-align: left;
+  position: relative;
+  background: base.$color-primary;
+  border-radius: 15px;
+  font-size: 32px;
+  font-weight: bold;
+  box-shadow: 0 0 5px black;
+  line-height: 80px;
+  top: 50px;
+  text-indent: 2em;
+  padding-left: 20px;
+
+}
+.lesson-card {
+  text-align: left;
+  position: relative;
+
+  background: base.$color-primary;
+  border-radius: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 0 5px black;
+  line-height: 80px;
+}
 
 .home .welcome {
   margin-top: 80px;
@@ -101,6 +126,12 @@ $page-horizontal-margin: 25%;
 
 .lessons {
   .lesson-menu {
+    border-radius: 15px;
+    box-shadow: 0 0 5px lightblue;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+
     ul {
       list-style: none;
       padding-left: 0;
@@ -176,7 +207,10 @@ $page-horizontal-margin: 25%;
 .contact-card{
   background-color: base.$color-primary;
   border-radius: 10px;
-  text-align: center
+  text-align: center;
+  box-shadow: 0 0 5px black;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .lesson-page {
   .status {

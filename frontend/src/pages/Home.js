@@ -35,14 +35,14 @@ function Home() {
         <div>
           <h1 className="title">Welcome!</h1>
           <p>
-            KIDATA is a learning platform designed to teach kids about data 
-            science in a way that appeals to them.  
+            <strong>KIDATA is a learning platform designed to teach kids about data
+              science in a way that appeals to them.</strong>
           </p>
         </div>
         <div className="right-align">
           <h1 className="title">Information Box</h1>
             <p>
-              With body text aligned to the right...
+              <strong>With body text aligned to the right...</strong>
             </p>
         </div>
       </div>

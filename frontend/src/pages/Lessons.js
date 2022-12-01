@@ -4,18 +4,18 @@ function Lessons() {
   return (
     <div className="lessons">
       <h1 className="title">Lessons</h1>
-      <div className="lesson-content">
-        <h1>
+      <div className="lesson-card">
+        <h2>
           Welcome to KIDATA's lessons
-        </h1>
+        </h2>
         <p>
           Based on this content, you can learn more interesting skills.</p>
         <p>
           If you are tired of playing games, reading will be a good choice.
         </p>
       </div>
+      <h1 className="title">Menu</h1>
       <div className="lesson-menu">
-        <h1>Menu</h1>
         <ul>
           <NavLink to={"/lessons/grade1_2"}>
             <li className="success">
