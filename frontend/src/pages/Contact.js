@@ -15,17 +15,21 @@ function Contact() {
                     <label for='name'><strong>Name</strong></label>
                     <br></br>
                     <br></br>
+                    <label for='name'>Name</label>
+                    <br></br>
                     <input type='text' name='name' id='name' ></input>
                     <br></br>
                     <br></br>
                     <label for='email'><strong>Email</strong></label>
                     <br></br>
+                    <label for='email'>Email</label>
                     <br></br>
                     <input type='text' id='email' name='email' ></input>
                     <br></br>
                     <br></br>
                     <label for='questiontype'><strong>Question Type</strong></label>
                     <br></br>
+                    <label for='questiontype'>Question Type</label>
                     <br></br>
                     <select id='questiontype' name='questiontype'>
                         <option value='content'>Content</option>
@@ -36,6 +40,7 @@ function Contact() {
                     <br></br>
 
                     <label for='question'><strong>Question</strong></label>
+                    <label for='question'>Question</label>
                     <br></br>
                     <br></br>
                     <textarea id='question' name='question' rows='10' cols='50'>
@@ -44,7 +49,8 @@ function Contact() {
                 
                     <br></br>
                     <input type='submit' value='Send'></input>
-
+                    <br></br>
+                    <br></br>
 
                 </section>
             </form>
