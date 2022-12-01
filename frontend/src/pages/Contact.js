@@ -12,13 +12,16 @@ function Contact() {
         <div className="contact-card">
             <form action='http://localhost:8080/post/feedback' method='Post' className = 'send'>
                 <section id='info'>
+                    <br></br>
                     <label for='name'>Name</label>
                     <br></br>
                     <input type='text' name='name' id='name' ></input>
                     <br></br>
+                    <br></br>
                     <label for='email'>Email</label>
                     <br></br>
                     <input type='text' id='email' name='email' ></input>
+                    <br></br>
                     <br></br>
                     <label for='questiontype'>Question Type</label>
                     <br></br>
@@ -29,7 +32,6 @@ function Contact() {
                     </select>
                     <br></br>
                     <br></br>
-
                     <label for='question'>Question</label>
                     <br></br>
                     <textarea id='question' name='question' rows='5' cols='30'>
@@ -38,7 +40,7 @@ function Contact() {
                 
                     <br></br>
                     <input type='submit' value='Send'></input>
-
+                    <br></br><br></br>
 
                 </section>
             </form>
