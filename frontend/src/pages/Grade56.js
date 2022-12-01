@@ -1,13 +1,11 @@
 import { LessonCardList } from "../components/LessonCardList";
 
-import image_1_1 from "../Lessons_Zhuoqun/5_algebra.md";
 import image_1_2 from "../Lessons_LinYang/linegraph_1.jpg";
 import image_2_1 from "../Lessons_LinYang/dataset_1.jpg";
 import image_2_2 from "../Lessons_LinYang/fraction_1.jpg";
 
 const cardData = [
   {
-    src: "",
     name: "Algebra",
     link: "/lessons/10"
   },

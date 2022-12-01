@@ -149,7 +149,8 @@ $page-horizontal-margin: 25%;
       
       // why does this resolve the gap issue?:
       column-width: 400px;
-
+      height: 250px;
+      text-align: center;
       background-color: base.$color-primary;
       border-radius: 5px;
       
@@ -159,8 +160,9 @@ $page-horizontal-margin: 25%;
       transition-duration: 0.2s;
 
       img {
-        max-width: 100%;
-        height: auto;
+        
+        width: 95%;
+        height: 200px;
 
         border-radius: inherit;
       }

@@ -3,7 +3,7 @@ function Contact() {
         <div className="Contact">
         <div className="page-card">
             <p>
-                <h1>Contact Us</h1>
+                <h1 className="title">Contact Us</h1>
                 <p>Thank you for taking time to contact us! Please provide the following information:</p>
                 <br></br>
                 <br></br>

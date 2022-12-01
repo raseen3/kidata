@@ -1,7 +1,7 @@
 import { LessonCardList } from "../components/LessonCardList";
 
 import image_1_1 from "../Lessons_Zhuoqun/calcu0_10_1.jpg";
-import image_1_2 from "../Lessons_Zhuoqun/length_2.jpg";
+import image_1_2 from "../Lessons_Zhuoqun/length_6.jpg";
 import image_2_1 from "../Lessons_LinYang/bargraph_1.jpg";
 import image_2_2 from "../Lessons_LinYang/lineplots_2.jpg";
 
