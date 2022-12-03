@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe81b3a6-d933-447c-bd34-8fe3588bda24" name="变更" comment="变更">
-      <change beforePath="$PROJECT_DIR$/../backend/kidata/src/main/java/dir/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/kidata/src/main/java/dir/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lessons_Zhuoqun/1_length.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lessons_Zhuoqun/1_length.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Lessons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Lessons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_fonts.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +65,9 @@
       <workItem from="1669243289783" duration="4006000" />
       <workItem from="1669669966027" duration="629000" />
       <workItem from="1669686229365" duration="1430000" />
+      <workItem from="1669867333581" duration="147000" />
+      <workItem from="1669900430011" duration="939000" />
+      <workItem from="1669936097048" duration="4769000" />
     </task>
     <servers />
   </component>

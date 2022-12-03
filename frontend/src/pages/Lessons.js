@@ -5,13 +5,13 @@ function Lessons() {
     <div className="lessons">
       <h1 className="title">Lessons</h1>
       <div className="lesson-card">
-        <h2>
-          Welcome to KIDATA's lessons
-        </h2>
-        <p>
-          Based on this content, you can learn more interesting skills.</p>
-        <p>
-          If you are tired of playing games, reading will be a good choice.
+        <p class = "information">
+          <em>
+            <b>
+                Based on this content, you can learn more interesting skills.
+                If you are tired of playing games, reading will be a good choice.
+            </b>
+        </em>
         </p>
       </div>
       <h1 className="title">Menu</h1>
