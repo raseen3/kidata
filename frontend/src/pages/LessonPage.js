@@ -64,7 +64,9 @@ function LessonContent(props) {
       {
         choices && (
           <>
-            <h1>Quiz</h1>
+              <br/>
+            <h1> Quiz (Try again if you got it wrong)</h1>
+              <br/>
             {choices}
           </>
         )
@@ -149,9 +151,11 @@ function LessonPage() {
   }
 
   return (
-    <div className="lesson-page">
-      {renderElement}
-    </div>
+      <div id = "lesson-back">
+          <div className="lesson-page">
+              {renderElement}
+          </div>
+      </div>
   )
 }
 

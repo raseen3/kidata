@@ -1,7 +1,7 @@
 @use "base";
 @use "footer";
 
-$page-horizontal-margin: 25%;
+$page-horizontal-margin: 22%;
 
 // flexbox to handle body content sizing:
 .page-container {
@@ -212,6 +212,13 @@ $page-horizontal-margin: 25%;
   padding-top: 10px;
   padding-bottom: 10px;
   height: 120%;
+}
+
+#lesson-back{
+  @include base.rounding;
+
+  background-color: #FABB51;
+  padding: 2%;
 }
 .lesson-page {
   .status {
