@@ -20,6 +20,7 @@ function Navbar() {
         <NavbarLink to="/games" text="Games" />
         <NavbarLink to="/about" text="About" />
         <NavbarLink to="/contact" text="Contact" />
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6n1x87emlc1Xk_ublhrTQcVwF4AiJjYvRTGCoVpJ_k3kbNg/viewform?usp=sf_link"> Feedback</a>
       </ul>
     </div>
   )
